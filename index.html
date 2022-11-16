@@ -7,30 +7,10 @@
     <title>Projeto do Bootcamp</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
-    <style>
-
-        body{
-            margin: 0px;
-            padding: 0px;
-        }
-
-        #principal{
-            width: 100%;
-            height: 100%;
-            border: 1px black;
-            background-color: #303030;
-        }
-        #principal div a{
-            font-family: 'Inter';
-            font-style: normal;
-            font-weight: 600;
-            font-size: 25px;
-            line-height: 30px;
-            color: #FFFFFF;
-            text-decoration: none;
-
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -40,7 +20,70 @@
             <a href="">Últimas Edições</a>
             <a href="">Requisitos para Participar</a>
         </div>
-        <button>Login</button>
+        <div>
+            <button>Login</button>
+        </div>
     </nav>
+
+    <section>
+        <header id="head">
+            <h1><b> Bootcamp DNC</b></h1>
+
+            <h2>Esse será um evento exclusivo para todos os alunos <br>
+                da <b> DNC</b>, que querem <span class="invert"> acelerar a carreira </span> com uma <br>
+                semana intensiva de conteúdo de mercado entre <br>
+                <span class="invert">BACK-END, FRONT-END & BANCO DE DADOS.</span>
+            </h2>
+
+        </header>
+
+        <form action="">
+
+            <div class="form-group">
+                <label for="">Nome:</label>
+                <input type="text" placeholder="Insira seu nome aqui" name="Nome" id="" required>
+            </div>
+
+            <div class="form-group">
+                <label for="">Sobrenome:</label>
+                <input type="text" placeholder="Insira seu sobrenome aqui" name="Sobrenome" id="" required>
+            </div>
+
+            <div class="form-group">
+                <label for="">Área de Interesse:</label>
+                <div id="checkbox-itens">
+
+                    <input type="checkbox" value="front" name="Front-end" id="">
+                    <label for="">Front-end</label>
+
+                    <input type="checkbox" value="back" name="Back-end" id="">
+                    <label for="">Back-end</label>
+
+                    <input type="checkbox" value="bd" name="Banco de Dados" id="">
+                    <label for="">Banco de Dados</label>
+                </div>
+                
+
+            </div>
+
+            <div class="form-group">
+                <label for="">Email:</label>
+                <input type="email" placeholder="Insira seu e-mail aqui" name="Email" id="" required>
+            </div>
+
+            <div class="form-group">
+                <label for="">Telefone:</label>
+                <input type="text" placeholder="(99) 99999 - 9999" name="Telefone" id="" required>
+            </div>
+
+            <div class="form-group">
+                <label for="">Insira uma frase criativa aqui:</label>
+                <input type="text" placeholder="Qual frase criativa você gostaria de falar? :)" name="Frase" id="" required>
+            </div>
+
+            <input id="formButton" type="submit" value="Cadastrar">
+
+        </form>
+    </section>
 </body>
 </html>
