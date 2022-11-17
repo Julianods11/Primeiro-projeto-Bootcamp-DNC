@@ -44,8 +44,7 @@
     color: #cccccc;
     }
 
-    #principal button{
-        position: absolute;
+    #button1{
         width: 80px;
         height: 39px;
         left: 1210px;
@@ -59,10 +58,11 @@
         font-size: 20px;
         line-height: 24px;
         color: #FFFFFF;
-        cursor:pointer
+        cursor:pointer;
+        margin-right: 30px;
     }
 
-    #principal button:hover{
+    #button1:hover{
         color: #cccccc;
     }
 
@@ -96,7 +96,7 @@
     .invert{
         background-color: black;
         font-weight: bold;
-        padding: 5px;
+        padding: 1px;
     }
 
     section{
@@ -154,11 +154,9 @@
         justify-content: space-around;
         display: flex;
         align-items: center;
-    }
-
-    #checkbox-itens label{
         font-size: 25px;
     }
+
     input[type="checkbox"]{
         transform: scale(1.8);
     }
@@ -181,7 +179,15 @@
     footer{
         margin-top: 268px;
         width: 100%;
+        height: 520px;
         background-color: #0C70F2;
+    }
+
+    .navegador{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 330px;
     }
 
     footer .linha1{
@@ -189,21 +195,12 @@
         justify-content: space-between;
         align-items: center;
         margin-left: 72px;
-
     }
 
     footer ul{
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 800;
-        font-size: 25px;
-        line-height: 30px;
-        text-align: center;
-        color: #FFFFFF;
-        list-style: none;
         margin: 0px;
         padding: 0px;
-
+        list-style: none;
     }
 
     footer h5{
@@ -219,6 +216,14 @@
         padding: 10px;
     }
     footer ul li{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 30px;
+        text-align: center;
+        color: #FFFFFF;
+        margin: 20px 0px 20px 0px;
 
     }
 
@@ -226,3 +231,99 @@
         text-decoration: none;
         color: #FFFFFF;
     }
+    .linha1 a:hover{
+        color:#bababa;
+    }
+
+    #adress{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+        color: #FFFFFF;
+        margin-top: 173px;
+        margin-right: 100px;
+    }
+
+    #linha2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 132px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 30px;
+        text-align: center;
+
+    }
+
+    #linha2 a{
+        text-decoration: none;
+        color: #FFFFFF;
+    }
+
+    #linha2 a:hover{
+        color: #bababa;
+    }
+
+    @media only screen and (max-width: 600px) {
+
+        /*Menu*/
+
+        #principal{
+            flex-direction: column;
+            height: auto;
+            width: 100%;
+        }
+        #menu{
+            flex-direction: column;
+            width: 100%;
+            margin: 10px 0px 40px 0px;
+        }
+        #menu a{
+            display: flex;
+            height: 50px;
+            align-items: center;
+        }
+        #principal button{
+                width: 420px;
+                margin: 0px;
+        }
+
+        /*Nav*/
+
+        #head{
+            margin-top: 30px;
+            width: auto;
+        }
+        h1{
+            font-size: 40px;
+        }
+        h2{
+            font-size: 16px;
+            text-align: center;
+        }
+        .form-group input{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 400px;
+            margin-left: 90px;
+        }
+        .form-group{
+            font-size: 20px;
+            text-align: center;
+        }
+        #checkbox-itens label{transform: scale(0.8);}
+        input[type="checkbox"]{
+            transform: scale(0.5);
+        }
+        #checkbox-itens{
+            width: 600px;
+            margin-right: 0px;
+        }
+     }
